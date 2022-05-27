@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Whatsapp Clone</title>
+</head>
+
+<body>
+  <main>
+    <div class="background_bollzap">
+      <div class="bollzap clearfix">
+        <div class="ui_left left">
+          <div class="top_bar">
+            <img src="img/lorem.png" alt="lorem.png">
+            <i class="fas fa-circle-notch"></i>
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="search">
+            <div>
+              <input id="search" type="search" placeholder="Search...">
+            </div>
+          </div>
+          <div class="contact">
+            <ul>
+              <li>
+                <div id="bob" class="user select" data-element="0">
+                  <img src="img/bob.jpg" alt="bob.jpg">
+                  <div>
+                    <h2>Bob</h2>
+                    <h3>¿De qué estás hablando?</h3>
+                  </div>
+                  <span>09:40</span>
+                </div>
+              </li>
+              <li>
+                <div id="angela" class="user not_select" data-element="1">
+                  <img src="img/angela.jpg" alt="angela.jpg">
+                  <div>
+                    <h2>Angela</h2>
+                    <h3>¡Estoy de camino!</h3>
+                  </div>
+                  <span>19:34</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ui_right left">
+          <div class="top_bar">
+            <div id="info_bob" class="info_user display_flex" data-element="0">
+              <img src="img/bob.jpg" alt="bob.jpg">
+              <div>
+                <h2>Bob</h2>
+                <h3>últ. vez hoy a la(s) <span>12:10</span></h3>
+              </div>
+            </div>
+            <div id="info_angela" class="info_user not_display" data-element="1">
+              <img src="img/angela.jpg" alt="angela.jpg">
+              <div>
+                <h2>Angela</h2>
+                <h3>últ. vez hoy a la(s) <span>16:30</span></h3>
+              </div>
+            </div>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="chat">
+            <div id="chat_bob" class="chat_user display_flex" data-element="0">
+              <div class="bubble send">
+                <p>Hola, ¿cómo estás?</p>
+                <span class="right">09:30</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="bubble receive">
+                <p>Estoy bien gracias.</p>
+                <span class="right">09:34</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div id="chat_angela" class="chat_user not_display" data-element="1">
+              <div class="bubble send">
+                <p>Hello world!!</p>
+                <span class="right">18:20</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="bubble receive">
+                <p>¡Esto es increíble!</p>
+                <span class="right">19:34</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="write">
+            <i class="far fa-smile"></i>
+            <input type="text" name="chat" placeholder="Escribe un mensaje aquí">
+            <i id="send" class="fas fa-arrow-alt-circle-right arrow not_display"></i>
+            <i class="fas fa-microphone microphone display_inline_block"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="template">
+    <div class="bubble">
+      <p></p>
+      <span class="right">XX:XX</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="option">
+      <!--<h2>Message info</h2>-->
+      <h2 class="delete">Delete message</h2>
+    </div>
+  </div>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
